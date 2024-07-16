@@ -129,7 +129,7 @@ class TextAndIconListCellRenderer extends JLabel implements ListCellRenderer<Tex
     @Override
     public Component getListCellRendererComponent(JList<? extends TextAndIcon> list, TextAndIcon value,
                                                   int index, boolean isSelected, boolean hasFocus) {
-        setText("<html><a href='" + value.getUrl() + "'>" + value.getName() + "</a><br/>" + value.getDescription() + "</html>");
+        setText("<html><a href='" + value.getUrl() + "'>" + value.getName() + "</a><br/><span style='font-weight: normal;'>" + value.getDescription() + "</span></html>");
         setIcon(value.getIcon());
 
         if (isSelected) {
