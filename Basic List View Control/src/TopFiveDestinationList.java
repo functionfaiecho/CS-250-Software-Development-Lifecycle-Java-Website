@@ -41,7 +41,7 @@ class TopDestinationListFrame extends JFrame {
         // Add destination items to the list
         addDestinationNameAndPicture("1. Auckland, New Zealand", "The multi-cultural and vibrant financial capital of New Zealand.", new ImageIcon(getClass().getResource("/resources/Auckland.jpg")), "https://www.newzealand.com/nz/auckland/");
         addDestinationNameAndPicture("2. Singapore", "Lovingly referred to as the 'Little Red Dot' and home to the world's best airport.", new ImageIcon(getClass().getResource("/resources/Singapore.jpg")), "https://www.visitsingapore.com/en/");
-        addDestinationNameAndPicture("3. Dubai, United Arab Emirates", "This urban jungle is the place to be for all your shopping needs and memories to last a lifetime.", new ImageIcon(getClass().getResource("/resources/Dubai.jpg")), "https://www.italia.it/en/lazio/rome");
+        addDestinationNameAndPicture("3. Dubai, United Arab Emirates", "This urban jungle is the place to be for all your shopping needs and memories to last a lifetime.", new ImageIcon(getClass().getResource("/resources/Dubai.jpg")), "https://www.visitdubai.com/en/");
         addDestinationNameAndPicture("4. Vienna, Austria", "The hills are alive, with the sound of music.", new ImageIcon(getClass().getResource("/resources/Vienna.jpg")), "https://www.austria.info/en/where-to-go/cities/vienna");
 
         JList<TextAndIcon> list = new JList<>(listModel);
