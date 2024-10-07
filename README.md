@@ -6,6 +6,8 @@ The Top Five Destination List is a Java Swing application that showcases a curat
 
 - [How To Run](#how-to-run)
     - [Original version](#original---java)
+    - [Enhancement](#enhancement)
+
 
 ### How To Run
 
@@ -27,3 +29,4 @@ git clone https://github.com/functionfaiecho/CS-250-Software-Development-Lifecyc
 
 ## Enhancement
 
+For the enhancement, though my initial plan was to just stick an API into my project, I decided to apply a little more thought. Given the circumstances (that Java is not usually used for web development), I wanted to use the opportunity to practice some web development. This time, 
