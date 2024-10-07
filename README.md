@@ -23,12 +23,11 @@ There are two versions of this project that you may choose to run. One is the or
 ```bash
 git clone https://github.com/functionfaiecho/CS-250-Software-Development-Lifecycle-Java-Website
 ```
-4. Under the "Basic List View" folder, there is a ```TopFiveDestinationList.java``` file. Click on it, and hit run. 
+4. Within ```CS-250-Software-Development-Lifecycle-Java-Website``` and the "Basic List View" folder, there is a ```TopFiveDestinationList.java``` file. Click on it, and hit run. 
 
 ![This is what you should see!](Basic%20List%20View%20Control/src/resources/javasitescreenshot.png)
 
 ## Enhancement
 
-For the enhancement, though my initial plan was to just stick an API into my project, I decided to apply a little more thought. Given the circumstances (that Java is not usually used for web development), I wanted to use the opportunity to practice some web development. In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI).
-
+In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI).
 
