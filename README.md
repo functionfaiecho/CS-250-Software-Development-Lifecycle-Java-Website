@@ -29,4 +29,6 @@ git clone https://github.com/functionfaiecho/CS-250-Software-Development-Lifecyc
 
 ## Enhancement
 
-For the enhancement, though my initial plan was to just stick an API into my project, I decided to apply a little more thought. Given the circumstances (that Java is not usually used for web development), I wanted to use the opportunity to practice some web development. This time, 
+For the enhancement, though my initial plan was to just stick an API into my project, I decided to apply a little more thought. Given the circumstances (that Java is not usually used for web development), I wanted to use the opportunity to practice some web development. In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI).
+
+
