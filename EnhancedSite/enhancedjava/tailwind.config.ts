@@ -9,11 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        theme: '#FEF9EF',       // Main theme colour
+        linkedText: '#FE6D73',  // Colour for linked text
+        text: '#114b5f',        // General text colour
       },
     },
   },
   plugins: [],
 };
+
 export default config;
