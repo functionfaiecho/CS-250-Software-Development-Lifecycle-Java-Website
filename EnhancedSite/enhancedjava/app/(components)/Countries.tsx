@@ -79,9 +79,17 @@ const Countries: React.FC = () => {
           </div>
           <div className="p-6 flex-1">
             <h2 className="text-2xl font-bold mb-4 text-blue-500">
-              <a href={destination.Link} target="_blank" rel="noopener noreferrer">
-                {destination.Destination}, {destination.Country}
-              </a>
+              {destination.Destination === "Singapore" ? (
+                // Singapore-specific display
+                <a href={destination.Link} target="_blank" rel="noopener noreferrer">
+                  Singapore
+                </a>
+              ) : (
+                // Other destinations
+                <a href={destination.Link} target="_blank" rel="noopener noreferrer">
+                  {destination.Destination}, {destination.Country}
+                </a>
+              )}
             </h2>
             <p className="text-gray-700 text-lg">{destination.Description}</p>
           </div>
