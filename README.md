@@ -29,5 +29,19 @@ git clone https://github.com/functionfaiecho/CS-250-Software-Development-Lifecyc
 
 ## Enhancement
 
-In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI).
+In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI), and the documentation may be read [here](https://countriesapi.crabcakes.dev).
 
+I have also incorporated this API into a Single-Page Application (SPA) that resembles the one created in Java. To run it, ensure that you have Docker installed on your computer, then:
+
+1. Navigate to ```enhancedjava``` as such:
+
+```bash
+cd EnhancedSite/enhancedjava
+```
+
+2. Once in the folder, run 
+```bash
+docker-compose up --build
+```
+
+The app will run on ```localhost:3000```.
