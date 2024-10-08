@@ -9,7 +9,7 @@ const Countries: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   // List of countries to display
-  const targetCountries = ["Jakarta", "Dubai", "Auckland", "Vienna", "Pulau Tioman"];
+  const targetCountries = ["Singapore", "Dubai", "Auckland", "Vienna", "Rome"];
 
   useEffect(() => {
     const loadDestinations = async () => {
@@ -31,6 +31,24 @@ const Countries: React.FC = () => {
     loadDestinations();
   }, []);
 
+  // Function to map country name to image file
+  const getImageUrl = (destination: string): string => {
+    switch (destination) {
+      case "Singapore":
+        return "/Singapore.jpg";
+      case "Dubai":
+        return "/Dubai.jpg";
+      case "Auckland":
+        return "/Auckland.jpg";
+      case "Vienna":
+        return "/Vienna.jpg";
+      case "Rome":
+        return "/Rome.jpg";
+      default:
+        return ""; // If no image is available, return an empty string or handle as needed
+    }
+  };
+
   // Display loading state
   if (loading) {
     return <p>Loading...</p>;
@@ -47,9 +65,19 @@ const Countries: React.FC = () => {
       {destinations.map((destination) => (
         <div 
           key={destination._id} 
-          className="bg-white shadow-lg rounded-lg overflow-hidden w-full md:w-3/4 lg:w-2/3 mb-6"
+          className="bg-white shadow-lg rounded-lg overflow-hidden w-full md:w-3/4 lg:w-2/3 mb-6 flex"
         >
-          <div className="p-6">
+          <div className="w-1/3">
+            {/* Add image based on the destination */}
+            {getImageUrl(destination.Destination) && (
+              <img
+                src={getImageUrl(destination.Destination)} // Dynamic image URL based on the destination
+                alt={destination.Destination}
+                className="w-full h-auto object-cover"
+              />
+            )}
+          </div>
+          <div className="p-6 flex-1">
             <h2 className="text-2xl font-bold mb-4 text-blue-500">
               <a href={destination.Link} target="_blank" rel="noopener noreferrer">
                 {destination.Destination}, {destination.Country}
