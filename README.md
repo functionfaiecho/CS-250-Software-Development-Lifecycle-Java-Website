@@ -29,7 +29,14 @@ git clone https://github.com/functionfaiecho/CS-250-Software-Development-Lifecyc
 
 ## Enhancement
 
-In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI), and the documentation may be read [here](https://countriesapi.crabcakes.dev).
+In line with Enhancement Three's database requirement, I created an API that holds a number of destinations, countries, links and descriptions. This API can be found [here](https://github.com/functionfaiecho/CountryAPI), and the documentation may be read [here](https://countriesapi.crabcakes.dev). The database related to this FastAPI is in MongoDB.
+
+I chose to use MongoDB for a number of different reasons. Firstly, MongoDB offers schema flexibility. Given that the data related to destinations and countries can vary over time (such as the addition of new destinations or changes in descriptions), MongoDB's dynamic schema allows for easy updates without requiring migrations or major changes to the database structure.
+
+Secondly, MongoDB stores data in a document-oriented format, which aligns well with FastAPI's JSON-based request and response handling. This allows for efficient, seamless data flow between the API and the database without needing to convert data formats extensively.
+
+In addition, FastAPI's asynchronous capabilities work well with MongoDB’s motor driver, which allows for non-blocking database operations. This is particularly useful when the API is handling multiple requests concurrently, ensuring that the user experience remains fast and responsive.
+MongoDB’s community support and ecosystem make it easier to integrate additional features in the future, should the API need enhancements or new functionalities.
 
 I have also incorporated this API into a Single-Page Application (SPA) that resembles the one created in Java. To run it, ensure that you have Docker installed on your computer, then:
 
