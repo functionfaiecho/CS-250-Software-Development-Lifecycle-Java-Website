@@ -38,6 +38,8 @@ Secondly, MongoDB stores data in a document-oriented format, which aligns well w
 In addition, FastAPI's asynchronous capabilities work well with MongoDB’s motor driver, which allows for non-blocking database operations. This is particularly useful when the API is handling multiple requests concurrently, ensuring that the user experience remains fast and responsive.
 MongoDB’s community support and ecosystem make it easier to integrate additional features in the future, should the API need enhancements or new functionalities.
 
+
+
 I have also incorporated this API into a Single-Page Application (SPA) that resembles the one created in Java. To run it, ensure that you have Docker installed on your computer, then:
 
 1. Navigate to ```enhancedjava``` as such:
